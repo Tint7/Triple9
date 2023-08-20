@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solt.triplenine.model.AddStoreListViewController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="75.0" spacing="10.0" style="-fx-background-color: #eed0b6;">
+         <children>
+            <SVGPath content="M26 2h-20l-6 6v21c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-21l-6-6zM16 26l-10-8h6v-6h8v6h6l-10 8zM4.828 6l2-2h18.343l2 2h-22.343z" fill="#2f00ff" />
+            <Label text="အိတ်ခွင်စာရင်းအသစ်တိုးြခင်း" textFill="#2f00ff">
+               <font>
+                  <Font name="Pyidaungsu-Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <GridPane hgap="20.0" style="-fx-background-color: #f7dfcc;" VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="194.6666259765625" minWidth="10.0" prefWidth="87.99998728434244" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.33336639404297" minWidth="10.0" prefWidth="252.6666793823242" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="‌‌နေရပ်" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Pyidaungsu-Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="ဖုန်းနံပါတ်" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Pyidaungsu-Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="အ‌ရေအတွက်" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Pyidaungsu-Bold" size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addstlistclose" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #ef5350;" text="ပိတ်မည်" textFill="WHITE">
+                     <font>
+                        <Font name="Pyidaungsu-Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#addstlistadded" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #42a5f5;" text="လုပ်ေဆာင်မည်" textFill="WHITE">
+                     <font>
+                        <Font name="Pyidaungsu-Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <Label layoutX="85.0" layoutY="73.0" text="အမည်">
+               <font>
+                  <Font name="Pyidaungsu-Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addstlistname" alignment="CENTER" GridPane.columnIndex="1" />
+            <TextField fx:id="addstlistaddress" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="addstlistnumber" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="addstlistphno" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="30.0" />
+         </padding>
+      </GridPane>
+   </children>
+</VBox>
